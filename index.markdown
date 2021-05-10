@@ -45,7 +45,7 @@ The security of `Esch` and `Schwaemm` relies on the interplay between the corres
 - [Léo Perrin](https://who.paris.inria.fr/Leo.Perrin/), Inria, France
 - [Aein Rezaei Shahmirzadi](https://www.emsec.ruhr-uni-bochum.de/chair/_staff/Aein-RezaeiShahmirzadi/), Ruhr-Universität Bochum, Germany
 - [Aleksei Udovenko](https://affine.group/), CryptoExperts, France
-- [Vesselin Velichkov](https://www.research.ed.ac.uk/en/persons/vesselin-velichkov)
+- [Vesselin Velichkov](https://www.research.ed.ac.uk/en/persons/vesselin-velichkov), University of Edinburgh, United Kingdom
 - [Qingju Wang](https://wwwen.uni.lu/snt/people/qingju_wang), DSC and SnT, University of Luxembourg, Luxembourg
 
 
@@ -56,7 +56,7 @@ The security of `Esch` and `Schwaemm` relies on the interplay between the corres
 
 ## Sample
 
-To show how lightweight our suite is, here is a full implementation of all the permutations of the `SPARKLE` family.
+To show how lightweight our suite is, here is a full implementation of all the permutations of the `SPARKLE` family. It takes as input parameters the state `x` on which it operates, the number of "branches" (i.e. the block size in bits divided by 64), and the number of steps to be performed.
 
 ```c
 #define MAX_BRANCHES 8
