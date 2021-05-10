@@ -18,15 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: LPP crypto
-email: leo.perrin <@> inria.fr
+title: Sparkle Suite
+email: sparklegrupp@googlegroups.com
 description: >- # 
-  The software I use in my day-to-day work, and which happens to be in
-  in more or less publishable shape  
+  The Sparkle suite of algorithm provides lightweight symmetric cryptographic
+  primitives whose implementation on micro-controllers is both extremely small
+  and fast, and which is a finalist of the ongoing NIST lightweight
+  standardisation effort.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lpp-crypto.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: lpp_crypto
-github_username:  lpp-crypto
 show_downloads: false
 
 
