@@ -22,7 +22,7 @@ title: Sparkle Suite
 email: sparklegrupp@googlegroups.com
 description: >- # 
   A collection of lightweight symmetric cryptographic
-  primitives, and a finalist of the ongoing NIST lightweight
+  primitives, finalist of the ongoing NIST lightweight
   standardisation effort.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lpp-crypto.github.io/" # the base hostname & protocol for your site, e.g. http://example.com

@@ -13,9 +13,9 @@ The Sparkle-suite is a collection of lightweight symmetric cryptographic algorit
 Their implementation on micro-controllers is both very small (low ROM/RAM footprint) and very fast (low cycle count per processed byte).
 
 A quick description follows. For more details, please checkout the following resources.
-- <github link>
-- <implementation page>
-- <cryptanalysis page>
+- github link
+- implementation page
+- cryptanalysis page
 
 ## Quick Description
 
