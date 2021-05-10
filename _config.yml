@@ -29,7 +29,7 @@ twitter_username: lpp_crypto
 github_username:  lpp-crypto
 
 # Build settings
-theme: architect
+theme: jekyll-theme-architect
 plugins:
   - jekyll-feed
 
