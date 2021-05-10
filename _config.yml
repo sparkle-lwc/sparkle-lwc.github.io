@@ -21,9 +21,8 @@
 title: Sparkle Suite
 email: sparklegrupp@googlegroups.com
 description: >- # 
-  The Sparkle suite of algorithm provides lightweight symmetric cryptographic
-  primitives whose implementation on micro-controllers is both extremely small
-  and fast, and which is a finalist of the ongoing NIST lightweight
+  A collection of lightweight symmetric cryptographic
+  primitives, and a finalist of the ongoing NIST lightweight
   standardisation effort.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lpp-crypto.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
