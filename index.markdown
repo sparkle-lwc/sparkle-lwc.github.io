@@ -3,9 +3,10 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title:  "My Repositories"
 ---
 
-# My Programs
+In this page, you will find links to all the programs I am publishing.
 
 ## sboxU
 
