@@ -30,7 +30,7 @@ show_downloads: false
 
 
 # Build settings
-theme: jekyll-theme-architect
+#theme: jekyll-theme-architect
 plugins:
   - jekyll-feed
 
