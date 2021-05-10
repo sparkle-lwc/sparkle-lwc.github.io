@@ -54,7 +54,7 @@ The security of `Esch` and `Schwaemm` relies on the interplay between the corres
 
 ## On the Names
 
-"Esch" is the name of a city in Luxembourg that is very close to the campus of the university of Luxembourg. "Schwaemm" is Luxembourgish for "sponges". As for "sparkle", it illustrates the fact that this family of permutations is a successor of the block cipher `SPARX`: it is **SPAR**x, but **K**ey**L**ess.
+"Esch" is the name of a city in Luxembourg that is very close to the campus of the university of Luxembourg. "Schwaemm" is Luxembourgish for "sponges". As for "sparkle", it illustrates the fact that this family of permutations is a successor of the block cipher `SPARX`: it is **SPAR**x, but **K**ey**LE**ss.
 
 
 ## Sample
