@@ -22,7 +22,8 @@ A quick description follows. For more details, please checkout the following res
 The SPARKLE suite consists of multiple algorithms:
 - `SPARKLE` is a family of cryptographic permutations, each operating on a different block size (256, 384 or 512 bits). They rely only on Addition, Rotations and XORs (ARX paradigm). It is possible to write a unique implementation for all variants that simply takes the block size and the number of steps as inputs.
 - `Esch` is a family of hash functions. `Esch256` outputs digests of 256 bits, and `Esch384` of 384 bits. They rely on the [sponge construction](https://en.wikipedia.org/wiki/Sponge_function), like the current hash standard [SHA-3](https://en.wikipedia.org/wiki/SHA-3).
-- `Schwaemm`
+- `Schwaemm` is an AEAD algorithm that uses the SPARKLE permutations in a specific mode. Several versions exist, each providing a specific security level and requiring a permutation operating on a specific block size.
+
 | Name | Security (bits) | Permutations size | 
 |------|----------------|-------------------|
 | Schwaemm-128-128 | 120 | 256 |
@@ -30,9 +31,11 @@ The SPARKLE suite consists of multiple algorithms:
 | Schwaemm-192-192 | 184 | 384 |
 | Schwaemm-256-256 | 246 | 512 |
 
+Of course, a library requiring both hashing and AEAD would only use a single implementation of the `SPARKLE` permutation, thus decreasing its size.
+
 Our algorithms are among the top performers on micro-controllers of the NIST lightweight standardization effort, see [the dedicated page]() for more information.
 
-The security of `Esch` and `Schwaemm` relies on the interplay between the corresponding modes of operation and specific properties of the SPARKLE permutations. Thanks to the /Long Trail Strategy/, we provide strong arguments in favour of the security of these algorithms. Our claims are in line with the current state of the literature on this topic, as expalined [here]().
+The security of `Esch` and `Schwaemm` relies on the interplay between the corresponding modes of operation and specific properties of the SPARKLE permutations. Thanks to the *Long Trail Strategy*, we provide strong arguments in favour of the security of these algorithms. Our claims are in line with the current state of the literature on this topic, as expalined [here]().
 
 
 ## The SPARKLE Team
