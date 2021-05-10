@@ -449,7 +449,7 @@ a:hover {
 
 header {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 5px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   border-bottom: solid 1px #275da1;
@@ -863,3 +863,17 @@ dl dd {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) { }
 
+/* Customization */
+nav {
+  padding-top: 10px;
+}
+nav a {
+  padding-right: 24px;
+  font-size: 150%; 
+}
+nav a, h1 a {
+  color: white;
+}
+nav a:hover, h1 a:hover {
+  color: #eee;
+}
