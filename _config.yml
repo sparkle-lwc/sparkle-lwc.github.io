@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Software I use for my research
+title: LPP crypto
 email: leo.perrin <@> inria.fr
 description: >- # 
   The software I use in my day-to-day work, and which happens to be in
@@ -27,12 +27,16 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lpp-crypto.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lpp_crypto
 github_username:  lpp-crypto
+show_downloads: false
+
 
 # Build settings
 theme: jekyll-theme-architect
 plugins:
   - jekyll-feed
 
+
+  
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
