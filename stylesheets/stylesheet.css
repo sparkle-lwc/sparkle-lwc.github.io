@@ -864,6 +864,9 @@ dl dd {
 @media only screen and (max-width: 479px) { }
 
 /* Customization */
+body {
+  overflow-y: scroll; /* Always show scrollbars to avoid shifting on page switch */
+}
 nav {
   padding-top: 10px;
 }
