@@ -520,8 +520,10 @@ aside#sidebar li {
   margin: 0 0 10px 0;
 }
 
-aside#sidebar h2 {
+aside#sidebar h1 {
   margin-top: 0;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  color: #474747;
 }
 
 #downloads {
