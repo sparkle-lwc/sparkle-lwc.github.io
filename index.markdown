@@ -8,9 +8,8 @@ layout: default
 
 
 
-The Sparkle-suite is a collection of lightweight symmetric cryptographic algorithms currently in the final round of the [NIST standardisation effort](https://csrc.nist.gov/Projects/lightweight-cryptography/). It contains both [Authenticated Ciphers with Associated Data (AEAD)](https://en.wikipedia.org/wiki/Authenticated_encryption#Authenticated_encryption_with_associated_data_(AEAD)) and [hash functions](https://en.wikipedia.org/wiki/Hash_function). These rely on the same inner component: the SPARKLE family of permutations. 
-
-Their implementation on micro-controllers is both very small (low ROM/RAM footprint) and very fast (low cycle count per processed byte).
+The Sparkle-suite is a collection of lightweight symmetric cryptographic algorithms currently in the final round of the [NIST standardisation effort](https://csrc.nist.gov/Projects/lightweight-cryptography/). It contains both [Authenticated Ciphers with Associated Data (AEAD)](https://en.wikipedia.org/wiki/Authenticated_encryption#Authenticated_encryption_with_associated_data_(AEAD)) and [hash functions](https://en.wikipedia.org/wiki/Hash_function).
+Their implementation on microcontrollers is both very small (low ROM/RAM footprint) and very fast (low cycle count per processed byte).
 
 A quick description follows. For more details, please checkout the following resources.
 - [github repository](https://github.com/cryptolu/sparkle)
@@ -21,7 +20,11 @@ A quick description follows. For more details, please checkout the following res
 
 The SPARKLE suite consists of multiple algorithms:
 - `SPARKLE` is a family of cryptographic permutations, each operating on a different block size (256, 384 or 512 bits). They rely only on Addition, Rotations and XORs (ARX paradigm). It is possible to write a unique implementation for all variants that simply takes the block size and the number of steps as inputs.
-- `Esch` is a family of hash functions. `Esch256` outputs digests of 256 bits, and `Esch384` of 384 bits. They rely on the [sponge construction](https://en.wikipedia.org/wiki/Sponge_function), like the current hash standard [SHA-3](https://en.wikipedia.org/wiki/SHA-3).
+It relies on the 64-bit transformation we called `Alzette` and denote it A_c. In the pictures below, the left one represents the round function of a `SPARKLE` instance operating on 64×n_b bits, and the right one represent `Alzette`.
+
+<img src="./assets/sparkle-round.png" width="500" alt="A diagram of the round function of `SPARKLE`">
+<img src="./assets/alzette.png" width="150" alt="The `Alzette` transformation">
+
 - `Schwaemm` is an AEAD algorithm that uses the SPARKLE permutations in a specific mode. Several versions exist, each providing a specific security level and requiring a permutation operating on a specific block size.
 
 | Name | Security (bits) | Permutations size | 
@@ -30,6 +33,9 @@ The SPARKLE suite consists of multiple algorithms:
 | Schwaemm-256-128 | 120 | 384 |
 | Schwaemm-192-192 | 184 | 384 |
 | Schwaemm-256-256 | 246 | 512 |
+
+- `Esch` is a family of hash functions. `Esch256` outputs digests of 256 bits, and `Esch384` of 384 bits. They rely on the [sponge construction](https://en.wikipedia.org/wiki/Sponge_function), like the current hash standard [SHA-3](https://en.wikipedia.org/wiki/SHA-3).
+- `XOEsch` is a family of *Extendable Output Functions (XOF)* based on `Esch`. A XOF is essentially a hash function for which the output size can be arbitrarily large. Conversely, a XOF can be seen like a stream cipher with an arbitrarily large nonce/IV.
 
 Of course, a library requiring both hashing and AEAD would only use a single implementation of the `SPARKLE` permutation, thus decreasing its size.
 
