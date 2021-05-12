@@ -57,13 +57,13 @@ If several algorithms are needed (i.e. if you need both hashing and AEAD), a uni
 
 ## The SPARKLE Team
 
-- [Christof Beierle](https://www.crypto.ruhr-uni-bochum.de/staff/beierle.html.en), Ruhr University Bochum, Horst G\"ortz Institute for IT Security, Germany
+- [Christof Beierle](https://www.crypto.ruhr-uni-bochum.de/staff/beierle.html.en), Ruhr University Bochum, Horst Görtz Institute for IT Security, Germany
 - [Alex Biryukov](https://www.cryptolux.org/index.php/Alex_Biryukov), DSC and SnT, University of Luxembourg, Luxembourg
 - [Luan Cardoso Dos Santos](https://wwwen.uni.lu/recherche/fstm/dcs/members/luan_cardoso_dos_santos), DSC and SnT, University of Luxembourg, Luxembourg
 - [Johann Johann Großschädl](https://sites.google.com/site/groszschaedl/), DSC and SnT, University of Luxembourg, Luxembourg
-- [Amir Moradi](https://www.emsec.ruhr-uni-bochum.de/chair/_staff/amir-moradi/), Ruhr University Bochum, Horst G\"ortz Institute for IT Security, Germany
+- [Amir Moradi](https://www.emsec.ruhr-uni-bochum.de/chair/_staff/amir-moradi/), Ruhr University Bochum, Horst Görtz Institute for IT Security, Germany
 - [Léo Perrin](https://who.paris.inria.fr/Leo.Perrin/), Inria, France
-- [Aein Rezaei Shahmirzadi](https://www.emsec.ruhr-uni-bochum.de/chair/_staff/Aein-RezaeiShahmirzadi/), Ruhr University Bochum, Horst G\"ortz Institute for IT Security, Germany
+- [Aein Rezaei Shahmirzadi](https://www.emsec.ruhr-uni-bochum.de/chair/_staff/Aein-RezaeiShahmirzadi/), Ruhr University Bochum, Horst Görtz Institute for IT Security, Germany
 - [Aleksei Udovenko](https://affine.group/), CryptoExperts, France
 - [Vesselin Velichkov](https://www.research.ed.ac.uk/en/persons/vesselin-velichkov), University of Edinburgh, United Kingdom
 - [Qingju Wang](https://wwwen.uni.lu/snt/people/qingju_wang), DSC and SnT, University of Luxembourg, Luxembourg
