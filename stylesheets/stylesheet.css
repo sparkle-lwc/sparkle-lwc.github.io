@@ -517,7 +517,7 @@ aside#sidebar p.repo-owner a {
 }
 
 aside#sidebar li {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px -5px; /* -5px temp hack to fit Round 2 */
 }
 
 aside#sidebar h1 {
