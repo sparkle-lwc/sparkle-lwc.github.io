@@ -448,7 +448,7 @@ a:hover {
 }
 
 header {
-  padding-top: 40px;
+  padding-top: 10px;
   padding-bottom: 5px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
@@ -456,7 +456,7 @@ header {
 }
 
 header h1 {
-  width: 540px;
+  width: 640px;
   margin-top: 0;
   margin-bottom: 0.2em;
   font-size: 72px;
@@ -467,7 +467,7 @@ header h1 {
 }
 
 header h2 {
-  width: 540px;
+  width: 640px;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 26px;
@@ -477,9 +477,13 @@ header h2 {
   letter-spacing: 0;
 }
 
+footer {
+  font-size: 75%;
+}
+
 .inner {
   position: relative;
-  width: 940px;
+  width: 980px;
   margin: 0 auto;
 }
 
@@ -499,7 +503,7 @@ header h2 {
 
 aside#sidebar {
   float: right;
-  width: 200px;
+  width: 240px;
   min-height: 504px;
   padding-left: 20px;
   font-size: 12px;
@@ -510,6 +514,14 @@ aside#sidebar {
 aside#sidebar p.repo-owner,
 aside#sidebar p.repo-owner a {
   font-weight: bold;
+}
+
+aside#sidebar li {
+  margin: 0 0 10px 0;
+}
+
+aside#sidebar h2 {
+  margin-top: 0;
 }
 
 #downloads {
