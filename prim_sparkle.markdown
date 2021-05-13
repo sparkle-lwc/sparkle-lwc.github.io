@@ -6,9 +6,25 @@ is_primitive: true
 ---
 
 `Sparkle` is a family of cryptographic permutations, each operating on a different block size (256, 384 or 512 bits). They rely only on Addition, Rotations and XORs (ARX paradigm). It is possible to write a unique implementation for all variants that simply takes the block size and the number of steps as inputs.
-It relies on the 64-bit transformation we called [Alzette](/alzette) and denote it $$A_c$$. The picture below represents the round function of a `Sparkle` instance operating on $$64×n_b$$ bits.
+It relies on the 64-bit transformation called [Alzette](/alzette). We denote it $$A_c$$. The following constants are used to instantiate `Alzette` in `Sparkle`:
+
+$$
+c_0 = \mathtt{b7e15162}, c_1 = \mathtt{bf715880}, c_2 = \mathtt{38b4da56}, c_3 = \mathtt{324e7738},
+$$
+
+$$
+c_4 = \mathtt{bb1185eb}, c_5 = \mathtt{4f7c7b57}, c_6 = \mathtt{cfbfa1c8}, c_7 = \mathtt{c2b3293d}.
+$$
+
+The picture below represents the round function of a `Sparkle` instance operating on $$64×n_b$$ bits (note $$h_n = n_n / 2$$).
 
 <img src="/assets/sparkle-round.png" alt="A diagram of the round function of `Sparkle`">
+
+The following code is a universal reference implementation of the `Sparkle` permutation in the `C` language. It accepts the input state, the total number $$n_b$$ of branches, and the number $$n_s$$ of steps. In particular, the following parameters are recommended:
+
+- for `Sparkle256`: $$n_b=4$$, $$n_s = 10$$ (full version) and $$n_s = 7$$ (slim version);
+- for `Sparkle384`: $$n_b=6$$, $$n_s = 11$$ (full version) and $$n_s = 7$$ (slim version);
+- for `Sparkle512`: $$n_b=8$$, $$n_s = 12$$ (full version) and $$n_s = 8$$ (slim version).
 
 ```c
 #define MAX_BRANCHES 8
