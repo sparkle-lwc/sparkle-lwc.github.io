@@ -631,19 +631,20 @@ form {
   margin-top: 0;
   margin-bottom: 0;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 2.8em;
+  font-size: 30px;
   font-weight: normal;
   color: #474747;
   text-indent: 6px;
   letter-spacing: -1px;
+  text-align: center;
 }
 
-#main-content h1:before {
+/*#main-content h1:before {
   padding-right: 0.3em;
   margin-left: -0.9em;
   color: #9ddcff;
   content: "/";
-}
+}*/
 
 #main-content h2 {
   margin-bottom: 8px;

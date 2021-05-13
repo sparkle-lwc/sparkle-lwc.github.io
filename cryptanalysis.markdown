@@ -4,23 +4,23 @@ title: Security Analysis
 permalink: /security
 ---
 
-# Security Foundations
+## Security Foundations
 
 Security of the Sparkle Suite of lightweight cryptographic primitives is based on several foundations.
 
 
-## The Security of Sponges
+### The Security of Sponges
 
 The security of our schemes is based on the security of the underlying cryptographic permutations and the security of sponge-based modes, more precisely the sponge-based hashing mode and the `Beetle` mode for authenticated encryption. The sponge-based approach has received a lot of attention as it the one used by the latest NIST-standardized hash function, `SHA-3`. We re-use this approach to leverage both its low memory footprint and the confidence cryptographers have gained for such components. The `Beetle` mode was developed more recently. It allows to process a large amount of data per call to the underlying permutation and thus perfectly fits for the lightweight cryptography purposes.
 Both modes provably reduce the security of the primitives to the security of the underlying cryptographic permutation.
 
 
-## The Literature on Block Cipher Design
+### The Literature on Block Cipher Design
 
 The design of the `Sparkle` family of permutations is based on the decades old SPN structure which allows us to decompose its analysis into two stages: first the study of its substitution layer, and, second, the study of its linear layer. The latter combines the Feistel structure, which has been used since the publication of the DES, and a linear permutation with a high branching number, like a vast number of SPNs such as the AES. To combine these two types of subcomponents, we rely on the design strategy that was used for the block cipher [Sparx](https://cryptolux.org/index.php/SPARX): *the long trail strategy*. Our substitution layer operates on 64-bit branches using the ARX-based S-box [Alzette](https://link.springer.com/chapter/10.1007%2F978-3-030-56877-1_15), where ARX stands for (modular) Addition, Rotation and XOR. The study of the differential and linear properties of modular addition in the context of block cipher can be traced back to the late 90's. The fact that the block size of the ARX component is limited to 64 bits means that it is possible to investigate it thoroughly using computer assisted methods. The simplicity and particular shape of the linear layer then allows us to deduce the properties of the full permutation from those of the 64-bit `Alzette` ARX-box.
 
 
-## Components Tailored for their Use Cases
+### Components Tailored for their Use Cases
 
 When using a permutation in a mode of operation, two approaches are possible. We can use a *hermetic* approach, meaning that no distinguishers are known to exist against the permutation. This security then carries over directly to the whole function (e.g. to the whole hash function or AEAD scheme). The downside in this case is that this hermetic strategy requires an expensive permutation which, in the context of lightweight cryptography, may be too much.
 
@@ -29,11 +29,11 @@ At the opposite, we can use a permutation which, on its own, cannot provide the 
 For `Sparkle` (and thus for both `Esch` and `Schwaemm`) we use the latter approach: the permutation used has a number of rounds that may allow the existence of some distinguishers. However, using a novel application of the established `long trail strategy`, we are able to prove that our sponge-based algorithms are safe with regard to the most important attack vectors - `differential attacks` and `linear attacks` - with a comfortable security margin. We thus get the best of both worlds: we do not have the performance penalty of the `hermetic` approach but still obtain security guarantees similar to those of a hermetic design.
 
 
-# Detailed Analysis
+## Detailed Analysis
 
 <!-- TBD: security of Alzette, diff/linear bounds? -->
 
-## Security of the Sparkle Permutation
+### Security of the Sparkle Permutation
 
 We thorougly evaluated the security of the main component of the Sparkle suite - the `Sparkle` permutation - against state-of-the-art cryptanalytic attacks.
 
