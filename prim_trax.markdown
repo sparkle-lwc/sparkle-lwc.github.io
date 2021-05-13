@@ -1,6 +1,6 @@
 ---
 layout: default
-title: TRAX
+title: TRAX, a Tweakable Block Cipher
 permalink: /trax
 is_primitive: true
 ---

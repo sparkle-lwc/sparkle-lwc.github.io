@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CRAX
+title: CRAX, a Classic Block Cipher
 permalink: /crax
 is_primitive: true
 ---
