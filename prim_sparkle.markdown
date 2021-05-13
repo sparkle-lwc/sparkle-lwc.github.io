@@ -2,6 +2,7 @@
 layout: default
 title: Sparkle, a lightweight cryptographic permutation
 permalink: /sparkle
+is_primitive: true
 ---
 
 `Sparkle` is a family of cryptographic permutations, each operating on a different block size (256, 384 or 512 bits). They rely only on Addition, Rotations and XORs (ARX paradigm). It is possible to write a unique implementation for all variants that simply takes the block size and the number of steps as inputs.

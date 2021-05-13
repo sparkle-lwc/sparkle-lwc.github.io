@@ -2,6 +2,7 @@
 layout: default
 title: Alzette, an ARX-box
 permalink: /alzette
+is_primitive: true
 ---
 
 The picture below represents the `Alzette` structure.
