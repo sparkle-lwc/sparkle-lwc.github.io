@@ -31,7 +31,7 @@ A quick description of these algorithms can be found below. For more details, pl
 
 The SPARKLE suite consists of multiple algorithms:
 - `Sparkle` is a family of cryptographic permutations, each operating on a different block size (256, 384 or 512 bits). They rely only on Addition, Rotations and XORs (ARX paradigm). It is possible to write a unique implementation for all variants that simply takes the block size and the number of steps as inputs.
-It relies on the 64-bit transformation we called `Alzette` and denote it A_c. In the pictures below, the left one represents the round function of a `Sparkle` instance operating on 64×n_b bits, and the right one represent `Alzette`.
+It relies on the 64-bit transformation we called `Alzette` and denote it $$A_c$$. In the pictures below, the left one represents the round function of a `Sparkle` instance operating on $$64×n_b$$ bits, and the right one represent `Alzette`.
 
 <img src="./assets/sparkle-round.png" width="500" alt="A diagram of the round function of `Sparkle`">
 <img src="./assets/alzette.png" width="150" alt="The `Alzette` transformation">
