@@ -68,12 +68,13 @@ If several algorithms are needed (i.e. if you need both hashing and AEAD), a uni
 - [Vesselin Velichkov](https://www.research.ed.ac.uk/en/persons/vesselin-velichkov), University of Edinburgh, United Kingdom
 - [Qingju Wang](https://wwwen.uni.lu/snt/people/qingju_wang), DSC and SnT, University of Luxembourg, Luxembourg
 
+<img src="/assets/emmaaiil.png" alt="Contact" />
 
 ## On the Names
 
 *Esch* is the name of a city in Luxembourg that is very close to the campus of the university of Luxembourg, and lies on the *Alzette* river.. *Schwaemm* is Luxembourgish for "sponges". As for *Sparkle*, it illustrates the fact that this family of permutations is a successor of the block cipher `SPARX`: it is **SPAR**x, but **K**ey**LE**ss.
 
-<img src="./assets/alzette-desature-esch.png" width="300" alt="Map of Luxembourg">
+<img src="./assets/alzette-desature-esch.png" width="300" alt="Map of Luxembourg" />
 
 
 ## Sample
