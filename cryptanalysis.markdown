@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Security Analysis
-permalink: /security/
+permalink: /security
 ---
 
 # Security Foundations

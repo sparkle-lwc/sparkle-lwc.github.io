@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Alzette, an ARX-box
-permalink: /alzette/
+permalink: /alzette
 ---
 
 The picture below represents the `Alzette` structure.
