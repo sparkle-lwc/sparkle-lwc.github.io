@@ -14,7 +14,7 @@ Their implementation on microcontrollers is both very small (low ROM/RAM footpri
 A quick description of these algorithms can be found below. For more details, please checkout the following resources.
 - [github repository](https://github.com/cryptolu/sparkle)
 - [information about implementations](/implementations)
-- [details on cryptanalysis](/cryptanalysis)
+- [details on cryptanalysis](/security)
 
 
 ## News
@@ -30,7 +30,7 @@ A quick description of these algorithms can be found below. For more details, pl
 ## Quick Description
 
 The SPARKLE suite consists of multiple algorithms:
-- `Sparkle` is a family of cryptographic permutations, each operating on a different block size (256, 384 or 512 bits). They rely only on Addition, Rotations and XORs (ARX paradigm). It is possible to write a unique implementation for all variants that simply takes the block size and the number of steps as inputs.
+- `Sparkle` is a family of cryptographic permutations, each operating on a different block size (256, 384 or 512 bits). They rely only on Addition, Rotations and XORs (ARX paradigm). It is possible to write a universal implementation for all variants that simply takes the block size and the number of steps as inputs.
 It relies on the 64-bit transformation we called `Alzette` and denote it $$A_c$$. In the pictures below, the left one represents the round function of a `Sparkle` instance operating on $$64×n_b$$ bits, and the right one represent `Alzette`.
 
 <img src="./assets/sparkle-round.png" width="500" alt="A diagram of the round function of `Sparkle`">
@@ -48,7 +48,7 @@ It relies on the 64-bit transformation we called `Alzette` and denote it $$A_c$$
 - `Esch` is a family of hash functions. `Esch256` outputs digests of 256 bits, and `Esch384` of 384 bits. They rely on the [sponge construction](https://en.wikipedia.org/wiki/Sponge_function), like the current hash standard [SHA-3](https://en.wikipedia.org/wiki/SHA-3).
 - `XOEsch` is a family of *Extendable Output Functions (XOF)* based on `Esch`. A XOF is essentially a hash function for which the output size can be arbitrarily large. Conversely, a XOF can be seen like a stream cipher with an arbitrarily large nonce/IV.
 
-If several algorithms are needed (i.e. if you need both hashing and AEAD), a unique implementation `Sparkle` could be used for both. This reuse will then decrease the overall size of codebase.
+If several algorithms are needed (i.e. if you need both hashing and AEAD), a universal implementation `Sparkle` could be used for both. This reuse will then decrease the overall size of codebase.
 
 <!-- Our algorithms are among the top performers on micro-controllers of the NIST lightweight standardization effort, see [the dedicated page](./implementations) for more information. -->
 
