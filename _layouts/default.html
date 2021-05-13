@@ -32,10 +32,14 @@
           <div class="dropdown">
             <button class="menuitem dropbtn {% if page.is_primitive %}selected{% endif %}">Primitives</button>
             <div class="dropdown-content">
-              <a {% if page.name == "prim_alzette.markdown" %}class="selected"{% endif %} href="/alzette">Alzette - ARX-box</a>
-              <a {% if page.name == "prim_sparkle.markdown" %}class="selected"{% endif %} href="/sparkle">Sparkle - Permutation</a>
-              <a {% if page.name == "prim_esch.markdown" %}class="selected"{% endif %} href="/esch">(XO)Esch - (extendable output) hash function</a>
-              <a {% if page.name == "prim_schwaemm.markdown" %}class="selected"{% endif %} href="/schwaemm">Schwaemm - Authenticated Encryption</a>
+              <div class="separator">Sparkle-suite:</div>
+              <a {% if page.name == "prim_alzette.markdown" %}class="selected"{% endif %} href="/alzette"><span class="prim-name">Alzette</span> <span class="prim-descr">an ARX-box</span></a>
+              <a {% if page.name == "prim_sparkle.markdown" %}class="selected"{% endif %} href="/sparkle"><span class="prim-name">Sparkle</span> <span class="prim-descr">a permutation</span></a>
+              <a {% if page.name == "prim_esch.markdown" %}class="selected"{% endif %} href="/esch"><span class="prim-name">(XO)Esch</span> <span class="prim-descr">an extendable output hash function</span></a>
+              <a {% if page.name == "prim_schwaemm.markdown" %}class="selected"{% endif %} href="/schwaemm"><span class="prim-name">Schwaemm</span> <span class="prim-descr">Authenticated Encryption</span></a>
+              <div class="separator">Bonus:</div>
+              <a {% if page.name == "prim_trax.markdown" %}class="selected"{% endif %} href="/trax"><span class="prim-name">TRAX</span> <span class="prim-descr">a tweakable block cipher</span></a>
+              <a {% if page.name == "prim_crax.markdown" %}class="selected"{% endif %} href="/crax"><span class="prim-name">CRAX</span> <span class="prim-descr">a classic block cipher</span></a>
             </div>
           </div>
           <a class="menuitem {% if page.name == "implementations.markdown" %}selected{% endif %}" href="/implementations">Implementations</a>
