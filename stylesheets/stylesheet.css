@@ -933,6 +933,14 @@ nav a:hover, h1 a:hover {
   display: block;
 }
 
+.dropdown-content a .prim-name {
+
+}
+.dropdown-content a .prim-descr {
+  color: gray;
+  font-style: italic;
+}
+
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ddd; color: black;}
 
@@ -951,5 +959,10 @@ nav a.menuitem.selected, nav .dropbtn.selected {
 
 nav .dropdown-content a.selected {
   text-decoration: underline;
-  font-weight: bold;
+  /*font-weight: bold;*/
+}
+
+nav .dropdown .separator {
+  margin-left: 5px;
+  font-size: 120%;
 }
