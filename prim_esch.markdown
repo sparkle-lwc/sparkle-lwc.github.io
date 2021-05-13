@@ -21,7 +21,7 @@ is depicted in the following figures.
 <img src="/assets/esch384.png" alt="Esch384" />
 
 
-## On the naming
+## On the Names
 
 *Esch* is the name of a city in Luxembourg that is very close to the campus of the university of Luxembourg, and lies on the *Alzette* river.
 
