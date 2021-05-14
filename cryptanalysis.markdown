@@ -42,8 +42,8 @@ The following table lists upper bounds on the number of steps for which we found
 
 <!-- TBD: replace refs with links? -->
 
-| **Attack**                     | **Ref.**                                         | &nbsp;`Sparkle256`&nbsp; | &nbsp;`Sparkle384`&nbsp; | &nbsp;`Sparkle512`&nbsp; |
-| :------------------------------|:-------------------------------------------------|----------------|--------------|--------------|
+| **Attack**                                                           | &nbsp;`Sparkle256`&nbsp; | &nbsp;`Sparkle384`&nbsp; | &nbsp;`Sparkle512`&nbsp; |
+|:------------------------------|:-------------------------------------------------|----------------|--------------|--------------|
 | [Differential cryptanalysis](https://link.springer.com/chapter/10.1007/3-540-38424-3_1)      | 4              | 5            | 6            |
 | [Linear cryptanalysis](https://link.springer.com/chapter/10.1007/3-540-48285-7_33)           | 5              | 6            | 6            |
 | [Boomerang attacks](https://link.springer.com/chapter/10.1007/3-540-48519-8_12)              | 3              | 4            | 5            |
@@ -52,9 +52,9 @@ The following table lists upper bounds on the number of steps for which we found
 | [Impossible differentials](https://link.springer.com/chapter/10.1007/3-540-48910-X_2) ([2](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.32.7982&rep=rep1&type=pdf))    | 4              | 4            | 4            |
 | [Zero-correlation](https://link.springer.com/article/10.1007/s10623-012-9697-z)                  | 4              | 4            | 4            |
 | [Integral and Division property](https://link.springer.com/chapter/10.1007/BFb0052343) ([2](https://link.springer.com/chapter/10.1007/3-540-45661-9_9),[3](https://link.springer.com/chapter/10.1007/978-3-662-46800-5_12))   | 4              | 4            | 4            |
-|--------------------------------|--------------------------------------------------|----------------|--------------|--------------|
-|                                | **\# steps slim**                                | **7**          | **7**        | **8**        |
-|                                | **\# steps big**                                 | **10**         | **11**       | **12**       |
+|-------------------------------|--------------------------------------------------|----------------|--------------|--------------|
+|    **\# steps slim**                                | **7**          | **7**        | **8**        |
+|    **\# steps big**                                 | **10**         | **11**       | **12**       |
 
 <!-- TBD: sponge-aware attacks (G&D?) -->
 
