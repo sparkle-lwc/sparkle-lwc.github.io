@@ -7,6 +7,7 @@ is_primitive: true
 
 `Crax-S-10` is a 64-bit block cipher that uses a 128-bit secret key intended for the most constrained micro-controllers. Since its key schedule is very simple and does not have to be precomputed, it is one of the fastest 64-bit lightweight block ciphers in software, beaten only for messages longer than 72 bytes by the NSA cipher [Speck](https://doi.org/10.1145/2744769.2747946). Due to this simple key schedule, it consumes lower RAM than `Speck`. While the family of tweakable block ciphers [Skinny](https://link.springer.com/chapter/10.1007/978-3-662-53008-5_5) can be considered as an academic alternative to the NSA cipher [Simon](https://doi.org/10.1145/2744769.2747946) in terms of hardware efficiency, `Crax-S-10` can be seen as an academic alternative to `Speck` in terms of software efficiency.
 
+
 ## Description
 
 `Crax-S-10` is built as a key-alternating cipher on top of the [Alzette](/alzette) ARX-box. It has 10 steps (calls to `Alzette` with 5 different constants) alternated with key and constant XORs.
